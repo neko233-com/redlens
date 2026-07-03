@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>redlens - Red Team Vulnerability Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">redlens</h1>
+            <p class="tagline">Red Team Vulnerability Scanner & Reporting Tool</p>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#installation">Installation</a>
+                <a href="#usage">Usage</a>
+                <a href="#docker">Docker</a>
+                <a href="https://github.com/redlens/redlens">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Full-Stack Security Assessment</h2>
+            <p>Scan your infrastructure for vulnerabilities, generate compliance-ready reports with full evidence chains.</p>
+            <div class="cta">
+                <a href="#installation" class="btn btn-primary">Get Started</a>
+                <a href="https://github.com/redlens/redlens" class="btn btn-secondary">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Web Vulnerability Scanning</h3>
+                    <p>Detect SQL injection, XSS, admin panel exposure, directory listing, and missing security headers.</p>
+                </div>
+                <div class="card">
+                    <h3>Network Security Audit</h3>
+                    <p>Port scanning, service fingerprinting, weak credential detection for databases and services.</p>
+                </div>
+                <div class="card">
+                    <h3>Host Configuration Check</h3>
+                    <p>OS security settings, exposed services, DNS misconfigurations, and privilege analysis.</p>
+                </div>
+                <div class="card">
+                    <h3>Full Evidence Chain</h3>
+                    <p>Reports include credentials, screenshots, PoC scripts, timestamps, and impact analysis.</p>
+                </div>
+                <div class="card">
+                    <h3>Compliance Reports</h3>
+                    <p>Generate HTML and JSON reports mapped to OWASP Top 10 and CIS benchmarks.</p>
+                </div>
+                <div class="card">
+                    <h3>Docker Simulation</h3>
+                    <p>Test against intentionally vulnerable applications with Docker Compose orchestration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="installation">
+        <div class="container">
+            <h2>Installation</h2>
+            <pre><code># Build from source
+git clone https://github.com/redlens/redlens.git
+cd redlens
+go build -o redlens ./cmd/redlens
+
+# Or use Docker
+docker build -t redlens .
+docker run -p 8080:8080 redlens</code></pre>
+        </div>
+    </section>
+
+    <section id="usage">
+        <div class="container">
+            <h2>Usage</h2>
+            <pre><code># Start the server
+./redlens serve
+
+# Open browser
+# http://localhost:3000</code></pre>
+        </div>
+    </section>
+
+    <section id="docker">
+        <div class="container">
+            <h2>Docker Simulation</h2>
+            <pre><code># Run with vulnerable test app
+cd docker
+docker-compose up --build
+
+# redlens will scan the vulnerable web app</code></pre>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>redlens - Built for security teams who need proof, not just findings.</p>
+        </div>
+    </footer>
+</body>
+</html>
