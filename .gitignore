@@ -1,5 +1,5 @@
 # Binaries
-redlens
+/redlens.exe
 *.exe
 *.dll
 *.so
