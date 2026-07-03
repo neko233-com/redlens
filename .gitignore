@@ -1,0 +1,39 @@
+# Binaries
+redlens
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test
+*.test
+*.out
+coverage.html
+
+# Dependencies
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Docker
+docker-compose.override.yml
+
+# Environment
+.env
+.env.local
+
+# Reports (generated)
+reports/
